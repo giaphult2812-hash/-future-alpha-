@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activate your account | FutureAlpha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0F0518;
+      font-family: 'Inter', Arial, sans-serif;
+      color: #ffffff;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #130720;
+    }
+    .header {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #0F0518;
+      border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #A855F7; /* Purple-500 */
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .title-section {
+      padding: 30px 20px;
+      text-align: center;
+      background-color: #1A0B2E;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+      color: #ffffff;
+    }
+    .content {
+      padding: 40px 30px;
+      background-color: #130720;
+    }
+    .greeting {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .text {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #D1D5DB; /* Gray-300 */
+      margin-bottom: 30px;
+    }
+    .button-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .button {
+      background-color: #9333EA; /* Purple-600 */
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      box-shadow: 0 0 15px rgba(147, 51, 234, 0.3);
+    }
+    .divider {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 40px 0;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-text {
+      text-align: center;
+      font-size: 14px;
+      color: #9CA3AF; /* Gray-400 */
+      line-height: 1.5;
+    }
+    .support-email {
+      color: #A855F7; /* Purple-500 */
+      text-decoration: none;
+    }
+    .signature {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      color: #D1D5DB;
+    }
+    .signature-brand {
+      color: #A855F7;
+      font-weight: bold;
+    }
+    .copyright {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #6B7280; /* Gray-500 */
+      background-color: #0F0518;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header with Logo -->
+    <div class="header">
+      <a href="#" class="logo">
+        <!-- Inline SVG for email compatibility -->
+        <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 55 C 10 25, 90 25, 90 55" stroke="#A855F7" stroke-width="4" fill="none" stroke-linecap="round" transform="rotate(-20 50 50)" opacity="0.8" />
+          <path d="M28 20 H 72 L 62 35 H 42 V 45 H 58 L 50 58 H 42 V 80 L 28 80 V 20 Z" fill="#9333EA" stroke="#E9D5FF" stroke-width="0.5" />
+          <path d="M 52 80 L 65 45 L 82 80 H 68 L 66 72 H 58 L 55 80 H 52 Z M 62 62 L 65 52 L 68 62 H 62 Z" fill="#9333EA" stroke="#E9D5FF" stroke-width="0.5" />
+          <path d="M90 55 C 90 85, 10 85, 10 55" stroke="#A855F7" stroke-width="4" fill="none" stroke-linecap="round" transform="rotate(-20 50 50)" opacity="0.9" stroke-dasharray="100" stroke-dashoffset="0" />
+        </svg>
+        FutureAlpha
+      </a>
+    </div>
+
+    <!-- Title -->
+    <div class="title-section">
+      <h1 class="title">Activate Your Account</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="greeting">Dear <strong>{{nickname}}</strong>,</div>
+      
+      <div class="text">
+        Thank you for your registration.
+      </div>
+      
+      <div class="text">
+        Please confirm your email by clicking the button below.
+      </div>
+
+      <div class="button-container">
+        <a href="{{activation_link}}" class="button">Activate Now</a>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="footer-text">
+        If this was not your own activity, please contact us immediately via email:<br><br>
+        <a href="mailto:support@futurealpha.net" class="support-email">support@futurealpha.net</a>
+      </div>
+
+      <div class="signature">
+        Best regards,<br>
+        <span class="signature-brand">FutureAlpha</span> Team
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      Copyright &copy; 2024 FutureAlpha. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>
